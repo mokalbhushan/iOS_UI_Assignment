@@ -15,6 +15,8 @@
 		92C55E4E2C1B56FB003D8022 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E4C2C1B56FB003D8022 /* PlanViewController.swift */; };
 		92C55E4F2C1B56FB003D8022 /* PlanViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E4D2C1B56FB003D8022 /* PlanViewController.xib */; };
 		92C55E532C1B69FC003D8022 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E522C1B69FC003D8022 /* Images.swift */; };
+		92C55E772C1B8F16003D8022 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E752C1B8F16003D8022 /* AchievementViewController.swift */; };
+		92C55E782C1B8F16003D8022 /* AchievementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E762C1B8F16003D8022 /* AchievementViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		92C55E4C2C1B56FB003D8022 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 		92C55E4D2C1B56FB003D8022 /* PlanViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlanViewController.xib; sourceTree = "<group>"; };
 		92C55E522C1B69FC003D8022 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		92C55E752C1B8F16003D8022 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
+		92C55E762C1B8F16003D8022 /* AchievementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 		92C55E492C1B5487003D8022 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				92C55E742C1B8EED003D8022 /* Achievement */,
 				92C55E4B2C1B54C5003D8022 /* Plan */,
 				92C55E4A2C1B549B003D8022 /* Tabbar */,
 			);
@@ -111,6 +116,15 @@
 				92C55E522C1B69FC003D8022 /* Images.swift */,
 			);
 			path = Constants;
+			sourceTree = "<group>";
+		};
+		92C55E742C1B8EED003D8022 /* Achievement */ = {
+			isa = PBXGroup;
+			children = (
+				92C55E752C1B8F16003D8022 /* AchievementViewController.swift */,
+				92C55E762C1B8F16003D8022 /* AchievementViewController.xib */,
+			);
+			path = Achievement;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,6 +187,7 @@
 			files = (
 				92C55E482C1B3D98003D8022 /* TabbarController.xib in Resources */,
 				92C55E3E2C1B3CAC003D8022 /* LaunchScreen.storyboard in Resources */,
+				92C55E782C1B8F16003D8022 /* AchievementViewController.xib in Resources */,
 				92C55E3B2C1B3CAC003D8022 /* Assets.xcassets in Resources */,
 				92C55E4F2C1B56FB003D8022 /* PlanViewController.xib in Resources */,
 			);
@@ -189,6 +204,7 @@
 				92C55E532C1B69FC003D8022 /* Images.swift in Sources */,
 				92C55E322C1B3CAA003D8022 /* AppDelegate.swift in Sources */,
 				92C55E4E2C1B56FB003D8022 /* PlanViewController.swift in Sources */,
+				92C55E772C1B8F16003D8022 /* AchievementViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
