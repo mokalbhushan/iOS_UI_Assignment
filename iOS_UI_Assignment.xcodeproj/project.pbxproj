@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		928DDAF62C1CE32E00868CE1 /* BudgetViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DDAF42C1CE32E00868CE1 /* BudgetViewCell.swift */; };
+		928DDAF72C1CE32E00868CE1 /* BudgetViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928DDAF52C1CE32E00868CE1 /* BudgetViewCell.xib */; };
 		92C55E322C1B3CAA003D8022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E312C1B3CAA003D8022 /* AppDelegate.swift */; };
 		92C55E3B2C1B3CAC003D8022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E3A2C1B3CAC003D8022 /* Assets.xcassets */; };
 		92C55E3E2C1B3CAC003D8022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E3C2C1B3CAC003D8022 /* LaunchScreen.storyboard */; };
@@ -17,9 +19,19 @@
 		92C55E532C1B69FC003D8022 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E522C1B69FC003D8022 /* Images.swift */; };
 		92C55E772C1B8F16003D8022 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E752C1B8F16003D8022 /* AchievementViewController.swift */; };
 		92C55E782C1B8F16003D8022 /* AchievementViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E762C1B8F16003D8022 /* AchievementViewController.xib */; };
+		92C55E7C2C1CBCB2003D8022 /* TopViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E7A2C1CBCB2003D8022 /* TopViewCell.swift */; };
+		92C55E7D2C1CBCB2003D8022 /* TopViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E7B2C1CBCB2003D8022 /* TopViewCell.xib */; };
+		92C55E802C1CC577003D8022 /* TopCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E7E2C1CC577003D8022 /* TopCollectionCell.swift */; };
+		92C55E812C1CC577003D8022 /* TopCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E7F2C1CC577003D8022 /* TopCollectionCell.xib */; };
+		92C55E842C1CD1D6003D8022 /* GoalViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E822C1CD1D6003D8022 /* GoalViewCell.swift */; };
+		92C55E852C1CD1D6003D8022 /* GoalViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E832C1CD1D6003D8022 /* GoalViewCell.xib */; };
+		92C55E882C1CD617003D8022 /* GoalCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E862C1CD617003D8022 /* GoalCollectionCell.swift */; };
+		92C55E892C1CD617003D8022 /* GoalCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E872C1CD617003D8022 /* GoalCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		928DDAF42C1CE32E00868CE1 /* BudgetViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudgetViewCell.swift; sourceTree = "<group>"; };
+		928DDAF52C1CE32E00868CE1 /* BudgetViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BudgetViewCell.xib; sourceTree = "<group>"; };
 		92C55E2E2C1B3CAA003D8022 /* iOS_UI_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_UI_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C55E312C1B3CAA003D8022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C55E3A2C1B3CAC003D8022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -32,6 +44,14 @@
 		92C55E522C1B69FC003D8022 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		92C55E752C1B8F16003D8022 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
 		92C55E762C1B8F16003D8022 /* AchievementViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AchievementViewController.xib; sourceTree = "<group>"; };
+		92C55E7A2C1CBCB2003D8022 /* TopViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewCell.swift; sourceTree = "<group>"; };
+		92C55E7B2C1CBCB2003D8022 /* TopViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopViewCell.xib; sourceTree = "<group>"; };
+		92C55E7E2C1CC577003D8022 /* TopCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopCollectionCell.swift; sourceTree = "<group>"; };
+		92C55E7F2C1CC577003D8022 /* TopCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopCollectionCell.xib; sourceTree = "<group>"; };
+		92C55E822C1CD1D6003D8022 /* GoalViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewCell.swift; sourceTree = "<group>"; };
+		92C55E832C1CD1D6003D8022 /* GoalViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalViewCell.xib; sourceTree = "<group>"; };
+		92C55E862C1CD617003D8022 /* GoalCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCollectionCell.swift; sourceTree = "<group>"; };
+		92C55E872C1CD617003D8022 /* GoalCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GoalCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +116,7 @@
 		92C55E4B2C1B54C5003D8022 /* Plan */ = {
 			isa = PBXGroup;
 			children = (
+				92C55E792C1CBC3B003D8022 /* Cell */,
 				92C55E4C2C1B56FB003D8022 /* PlanViewController.swift */,
 				92C55E4D2C1B56FB003D8022 /* PlanViewController.xib */,
 			);
@@ -125,6 +146,23 @@
 				92C55E762C1B8F16003D8022 /* AchievementViewController.xib */,
 			);
 			path = Achievement;
+			sourceTree = "<group>";
+		};
+		92C55E792C1CBC3B003D8022 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				92C55E7A2C1CBCB2003D8022 /* TopViewCell.swift */,
+				92C55E7B2C1CBCB2003D8022 /* TopViewCell.xib */,
+				92C55E7E2C1CC577003D8022 /* TopCollectionCell.swift */,
+				92C55E7F2C1CC577003D8022 /* TopCollectionCell.xib */,
+				92C55E822C1CD1D6003D8022 /* GoalViewCell.swift */,
+				92C55E832C1CD1D6003D8022 /* GoalViewCell.xib */,
+				92C55E862C1CD617003D8022 /* GoalCollectionCell.swift */,
+				92C55E872C1CD617003D8022 /* GoalCollectionCell.xib */,
+				928DDAF42C1CE32E00868CE1 /* BudgetViewCell.swift */,
+				928DDAF52C1CE32E00868CE1 /* BudgetViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -187,9 +225,14 @@
 			files = (
 				92C55E482C1B3D98003D8022 /* TabbarController.xib in Resources */,
 				92C55E3E2C1B3CAC003D8022 /* LaunchScreen.storyboard in Resources */,
+				92C55E7D2C1CBCB2003D8022 /* TopViewCell.xib in Resources */,
 				92C55E782C1B8F16003D8022 /* AchievementViewController.xib in Resources */,
 				92C55E3B2C1B3CAC003D8022 /* Assets.xcassets in Resources */,
 				92C55E4F2C1B56FB003D8022 /* PlanViewController.xib in Resources */,
+				92C55E892C1CD617003D8022 /* GoalCollectionCell.xib in Resources */,
+				928DDAF72C1CE32E00868CE1 /* BudgetViewCell.xib in Resources */,
+				92C55E812C1CC577003D8022 /* TopCollectionCell.xib in Resources */,
+				92C55E852C1CD1D6003D8022 /* GoalViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,9 +245,14 @@
 			files = (
 				92C55E472C1B3D98003D8022 /* TabbarController.swift in Sources */,
 				92C55E532C1B69FC003D8022 /* Images.swift in Sources */,
+				92C55E882C1CD617003D8022 /* GoalCollectionCell.swift in Sources */,
+				92C55E802C1CC577003D8022 /* TopCollectionCell.swift in Sources */,
+				92C55E842C1CD1D6003D8022 /* GoalViewCell.swift in Sources */,
 				92C55E322C1B3CAA003D8022 /* AppDelegate.swift in Sources */,
 				92C55E4E2C1B56FB003D8022 /* PlanViewController.swift in Sources */,
+				92C55E7C2C1CBCB2003D8022 /* TopViewCell.swift in Sources */,
 				92C55E772C1B8F16003D8022 /* AchievementViewController.swift in Sources */,
+				928DDAF62C1CE32E00868CE1 /* BudgetViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
