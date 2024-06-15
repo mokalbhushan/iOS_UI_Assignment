@@ -68,6 +68,8 @@
             <size key="customSize" width="191" height="93"/>
             <connections>
                 <outlet property="contentBackgroundView" destination="MIc-7B-nfs" id="VHT-yo-oZp"/>
+                <outlet property="titleLabel" destination="n91-tL-FbM" id="YkD-9z-rpV"/>
+                <outlet property="valueLabel" destination="yUf-rJ-ksT" id="ToN-1h-0B4"/>
             </connections>
             <point key="canvasLocation" x="246.56488549618319" y="34.859154929577464"/>
         </collectionViewCell>

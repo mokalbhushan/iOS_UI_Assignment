@@ -26,6 +26,7 @@
 		928DDB232C1D966700868CE1 /* HotelViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928DDB212C1D966700868CE1 /* HotelViewCell.xib */; };
 		928DDB262C1D9CD200868CE1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DDB252C1D9CD200868CE1 /* UIColor.swift */; };
 		928DDB282C1D9D3900868CE1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DDB272C1D9D3900868CE1 /* Colors.swift */; };
+		928DDB2B2C1DAB9100868CE1 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DDB2A2C1DAB9100868CE1 /* DataModel.swift */; };
 		92C55E322C1B3CAA003D8022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E312C1B3CAA003D8022 /* AppDelegate.swift */; };
 		92C55E3B2C1B3CAC003D8022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E3A2C1B3CAC003D8022 /* Assets.xcassets */; };
 		92C55E3E2C1B3CAC003D8022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E3C2C1B3CAC003D8022 /* LaunchScreen.storyboard */; };
@@ -66,6 +67,7 @@
 		928DDB212C1D966700868CE1 /* HotelViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelViewCell.xib; sourceTree = "<group>"; };
 		928DDB252C1D9CD200868CE1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		928DDB272C1D9D3900868CE1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		928DDB2A2C1DAB9100868CE1 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		92C55E2E2C1B3CAA003D8022 /* iOS_UI_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_UI_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C55E312C1B3CAA003D8022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C55E3A2C1B3CAC003D8022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -164,6 +166,14 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		928DDB292C1DAB7300868CE1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				928DDB2A2C1DAB9100868CE1 /* DataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		92C55E252C1B3CAA003D8022 = {
 			isa = PBXGroup;
 			children = (
@@ -183,6 +193,7 @@
 		92C55E302C1B3CAA003D8022 /* iOS_UI_Assignment */ = {
 			isa = PBXGroup;
 			children = (
+				928DDB292C1DAB7300868CE1 /* Model */,
 				92C55E502C1B69DD003D8022 /* Utilities */,
 				92C55E492C1B5487003D8022 /* Controllers */,
 				92C55E312C1B3CAA003D8022 /* AppDelegate.swift */,
@@ -371,6 +382,7 @@
 				92C55E842C1CD1D6003D8022 /* GoalViewCell.swift in Sources */,
 				92C55E322C1B3CAA003D8022 /* AppDelegate.swift in Sources */,
 				92C55E4E2C1B56FB003D8022 /* PlanViewController.swift in Sources */,
+				928DDB2B2C1DAB9100868CE1 /* DataModel.swift in Sources */,
 				928DDB1B2C1D7B2D00868CE1 /* HotelsViewController.swift in Sources */,
 				92C55E7C2C1CBCB2003D8022 /* TopViewCell.swift in Sources */,
 				92C55E772C1B8F16003D8022 /* AchievementViewController.swift in Sources */,

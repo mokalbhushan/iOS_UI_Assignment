@@ -10,7 +10,11 @@ import UIKit
 class TopViewCell: UITableViewCell {
 
     @IBOutlet var itemCollectionView: UICollectionView!
-    
+
+    var topData: [TopViewData] = [ TopViewData(title: "Incomes", amount: 5978.22),
+                                   TopViewData(title: "Expenses", amount: 4553.12)
+    ]
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setupCollectionView()
@@ -39,6 +43,7 @@ extension TopViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UIC
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TopCollectionCell", for: indexPath) as? TopCollectionCell else { return UICollectionViewCell()}
+        cell.setupData(data: topData[indexPath.row])
         return cell
     }
 
