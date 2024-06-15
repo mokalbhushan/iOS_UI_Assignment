@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HotelsViewController" customModule="iOS_UI_Assignment" customModuleProvider="target">
             <connections>
                 <outlet property="dismissButton" destination="wm1-AY-HG1" id="2f3-4e-6j2"/>
+                <outlet property="hotelListTableView" destination="aen-nP-Dpe" id="IOw-ZQ-BKl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -34,10 +36,61 @@
                                 <action selector="dismissButtonTapped:" destination="-1" eventType="touchUpInside" id="9az-Xu-EWm"/>
                             </connections>
                         </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berlin" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OoV-gG-xNE">
+                            <rect key="frame" x="19.999999999999996" y="30" width="54.666666666666657" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13-14 april, 2 Guests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YZd-eB-Oqf">
+                            <rect key="frame" x="20" y="59.000000000000007" width="157" height="20.333333333333336"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Va7-S1-kui">
+                            <rect key="frame" x="20" y="98" width="353" height="50"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohe-Tt-5Ad">
+                                    <rect key="frame" x="0.0" y="0.0" width="169" height="50"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="gray" image="line.3.horizontal" catalog="system" imagePlacement="top" title="Filter" imagePadding="0.0"/>
+                                </button>
+                                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyH-rM-pFW">
+                                    <rect key="frame" x="184" y="0.0" width="169" height="50"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="gray" imagePlacement="top" title="Opened" imagePadding="0.0">
+                                        <imageReference key="image" image="stopwatch.fill" catalog="system" symbolScale="small"/>
+                                    </buttonConfiguration>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="75J-G9-aUF"/>
+                            </constraints>
+                        </stackView>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="aen-nP-Dpe">
+                            <rect key="frame" x="0.0" y="168" width="393" height="525"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="Gd5-f7-eUl"/>
+                                <outlet property="delegate" destination="-1" id="EHo-AJ-n5f"/>
+                            </connections>
+                        </tableView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
+                        <constraint firstItem="OoV-gG-xNE" firstAttribute="leading" secondItem="dhs-eW-wZ8" secondAttribute="leading" constant="20" id="69J-lV-HVd"/>
+                        <constraint firstItem="Va7-S1-kui" firstAttribute="leading" secondItem="dhs-eW-wZ8" secondAttribute="leading" constant="20" id="Bcs-tb-xAo"/>
+                        <constraint firstAttribute="bottom" secondItem="aen-nP-Dpe" secondAttribute="bottom" id="Hbo-LY-RNm"/>
+                        <constraint firstAttribute="trailing" secondItem="aen-nP-Dpe" secondAttribute="trailing" id="ODj-wp-WbG"/>
+                        <constraint firstItem="YZd-eB-Oqf" firstAttribute="leading" secondItem="dhs-eW-wZ8" secondAttribute="leading" constant="20" id="RHw-DN-0XF"/>
+                        <constraint firstItem="aen-nP-Dpe" firstAttribute="leading" secondItem="dhs-eW-wZ8" secondAttribute="leading" id="ajq-A6-Ipq"/>
+                        <constraint firstItem="YZd-eB-Oqf" firstAttribute="top" secondItem="OoV-gG-xNE" secondAttribute="bottom" constant="5" id="hRI-Yc-h8r"/>
+                        <constraint firstItem="OoV-gG-xNE" firstAttribute="top" secondItem="dhs-eW-wZ8" secondAttribute="top" constant="30" id="idR-Bi-xjg"/>
                         <constraint firstItem="wm1-AY-HG1" firstAttribute="top" secondItem="dhs-eW-wZ8" secondAttribute="top" constant="10" id="q91-Hc-hPR"/>
+                        <constraint firstItem="Va7-S1-kui" firstAttribute="top" secondItem="YZd-eB-Oqf" secondAttribute="bottom" constant="18.620000000000001" id="qdH-DK-e4y"/>
+                        <constraint firstAttribute="trailing" secondItem="Va7-S1-kui" secondAttribute="trailing" constant="20" id="rY6-oy-Ss1"/>
+                        <constraint firstItem="aen-nP-Dpe" firstAttribute="top" secondItem="Va7-S1-kui" secondAttribute="bottom" constant="20" id="uZN-GK-Whe"/>
                         <constraint firstItem="wm1-AY-HG1" firstAttribute="centerX" secondItem="dhs-eW-wZ8" secondAttribute="centerX" id="yAT-m7-KbN"/>
                     </constraints>
                 </view>
@@ -54,6 +107,8 @@
         </view>
     </objects>
     <resources>
+        <image name="line.3.horizontal" catalog="system" width="128" height="65"/>
+        <image name="stopwatch.fill" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
