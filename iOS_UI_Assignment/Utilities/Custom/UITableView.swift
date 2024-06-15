@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// MARK: Custom TableviewClass for dynamic tableView
 class CustomTableView: UITableView {
 
     private let maxHeight = CGFloat(2000)

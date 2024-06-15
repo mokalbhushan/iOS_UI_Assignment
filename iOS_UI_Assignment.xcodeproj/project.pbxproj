@@ -18,6 +18,10 @@
 		928DDB072C1CF43D00868CE1 /* WorkoutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928DDB052C1CF43D00868CE1 /* WorkoutViewController.xib */; };
 		928DDB0D2C1D673500868CE1 /* WorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DDB0B2C1D673500868CE1 /* WorkoutCell.swift */; };
 		928DDB0E2C1D673500868CE1 /* WorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928DDB0C2C1D673500868CE1 /* WorkoutCell.xib */; };
+		928DDB122C1D743800868CE1 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DDB102C1D743800868CE1 /* MapViewController.swift */; };
+		928DDB132C1D743800868CE1 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928DDB112C1D743800868CE1 /* MapViewController.xib */; };
+		928DDB1B2C1D7B2D00868CE1 /* HotelsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DDB192C1D7B2D00868CE1 /* HotelsViewController.swift */; };
+		928DDB1C2C1D7B2D00868CE1 /* HotelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928DDB1A2C1D7B2D00868CE1 /* HotelsViewController.xib */; };
 		92C55E322C1B3CAA003D8022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E312C1B3CAA003D8022 /* AppDelegate.swift */; };
 		92C55E3B2C1B3CAC003D8022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E3A2C1B3CAC003D8022 /* Assets.xcassets */; };
 		92C55E3E2C1B3CAC003D8022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E3C2C1B3CAC003D8022 /* LaunchScreen.storyboard */; };
@@ -50,6 +54,10 @@
 		928DDB052C1CF43D00868CE1 /* WorkoutViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutViewController.xib; sourceTree = "<group>"; };
 		928DDB0B2C1D673500868CE1 /* WorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCell.swift; sourceTree = "<group>"; };
 		928DDB0C2C1D673500868CE1 /* WorkoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WorkoutCell.xib; sourceTree = "<group>"; };
+		928DDB102C1D743800868CE1 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		928DDB112C1D743800868CE1 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		928DDB192C1D7B2D00868CE1 /* HotelsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelsViewController.swift; sourceTree = "<group>"; };
+		928DDB1A2C1D7B2D00868CE1 /* HotelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelsViewController.xib; sourceTree = "<group>"; };
 		92C55E2E2C1B3CAA003D8022 /* iOS_UI_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_UI_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C55E312C1B3CAA003D8022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C55E3A2C1B3CAC003D8022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -111,6 +119,25 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		928DDB0F2C1D742100868CE1 /* Hotels */ = {
+			isa = PBXGroup;
+			children = (
+				928DDB102C1D743800868CE1 /* MapViewController.swift */,
+				928DDB112C1D743800868CE1 /* MapViewController.xib */,
+				928DDB192C1D7B2D00868CE1 /* HotelsViewController.swift */,
+				928DDB1A2C1D7B2D00868CE1 /* HotelsViewController.xib */,
+			);
+			path = Hotels;
+			sourceTree = "<group>";
+		};
+		928DDB182C1D787500868CE1 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				928DDAFC2C1CEB6700868CE1 /* UITableView.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
 		92C55E252C1B3CAA003D8022 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +170,7 @@
 		92C55E492C1B5487003D8022 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				928DDB0F2C1D742100868CE1 /* Hotels */,
 				928DDB032C1CF42200868CE1 /* Workout */,
 				928DDAFE2C1CEFAE00868CE1 /* Home */,
 				92C55E742C1B8EED003D8022 /* Achievement */,
@@ -174,8 +202,8 @@
 		92C55E502C1B69DD003D8022 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				928DDB182C1D787500868CE1 /* Custom */,
 				92C55E512C1B69EB003D8022 /* Constants */,
-				928DDAFC2C1CEB6700868CE1 /* UITableView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -281,12 +309,14 @@
 				928DDB072C1CF43D00868CE1 /* WorkoutViewController.xib in Resources */,
 				92C55E782C1B8F16003D8022 /* AchievementViewController.xib in Resources */,
 				928DDAFB2C1CE60E00868CE1 /* BudgetItemCell.xib in Resources */,
+				928DDB1C2C1D7B2D00868CE1 /* HotelsViewController.xib in Resources */,
 				92C55E3B2C1B3CAC003D8022 /* Assets.xcassets in Resources */,
 				92C55E4F2C1B56FB003D8022 /* PlanViewController.xib in Resources */,
 				92C55E892C1CD617003D8022 /* GoalCollectionCell.xib in Resources */,
 				928DDAF72C1CE32E00868CE1 /* BudgetViewCell.xib in Resources */,
 				92C55E812C1CC577003D8022 /* TopCollectionCell.xib in Resources */,
 				92C55E852C1CD1D6003D8022 /* GoalViewCell.xib in Resources */,
+				928DDB132C1D743800868CE1 /* MapViewController.xib in Resources */,
 				928DDB022C1CEFE200868CE1 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -309,10 +339,12 @@
 				92C55E842C1CD1D6003D8022 /* GoalViewCell.swift in Sources */,
 				92C55E322C1B3CAA003D8022 /* AppDelegate.swift in Sources */,
 				92C55E4E2C1B56FB003D8022 /* PlanViewController.swift in Sources */,
+				928DDB1B2C1D7B2D00868CE1 /* HotelsViewController.swift in Sources */,
 				92C55E7C2C1CBCB2003D8022 /* TopViewCell.swift in Sources */,
 				92C55E772C1B8F16003D8022 /* AchievementViewController.swift in Sources */,
 				928DDB012C1CEFE200868CE1 /* HomeViewController.swift in Sources */,
 				928DDAF62C1CE32E00868CE1 /* BudgetViewCell.swift in Sources */,
+				928DDB122C1D743800868CE1 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
