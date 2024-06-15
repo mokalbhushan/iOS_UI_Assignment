@@ -58,3 +58,37 @@ struct TopViewData {
         return amount
     }
 }
+
+
+//Model for TarvelGoals
+struct TraveGoal {
+    private let name: String
+    private let imageName: String
+    private let utilisedPurse: Double
+    private let totalPurse: Double
+    private let remainingPurse: Double
+
+    init(name: String, imageName: String, utilisedPurse: Double, totalPurse: Double, remainingPurse: Double) {
+        self.name = name
+        self.imageName = imageName
+        self.utilisedPurse = utilisedPurse
+        self.totalPurse = totalPurse
+        self.remainingPurse = remainingPurse
+    }
+
+    var getName: String {
+        return name
+    }
+    var getImageName: String {
+        return imageName
+    }
+    var getTotalPurse: Double {
+        return totalPurse
+    }
+    var getUtilizedPurse: Double {
+        return utilisedPurse
+    }
+    var getRemainingPurse: Double {
+        return remainingPurse
+    }
+}

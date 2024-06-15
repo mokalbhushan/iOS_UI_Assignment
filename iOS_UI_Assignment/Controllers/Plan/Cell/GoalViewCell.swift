@@ -11,6 +11,11 @@ class GoalViewCell: UITableViewCell {
 
     @IBOutlet var goalCollectionView: UICollectionView!
 
+    var goalData: [TraveGoal] = [
+        TraveGoal(name: "Travel to Japan", imageName: "japan", utilisedPurse: 890.20, totalPurse: 1900.00, remainingPurse: 1009.8),
+        TraveGoal(name: "Travel to US", imageName: "US", utilisedPurse: 500.50, totalPurse: 700.00, remainingPurse: 199.50)
+    ]
+
     override func awakeFromNib() {
         super.awakeFromNib()
         setupCollectionView()
@@ -34,11 +39,12 @@ class GoalViewCell: UITableViewCell {
 
 extension GoalViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 2
+        return goalData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "GoalCollectionCell", for: indexPath) as? GoalCollectionCell else {return UICollectionViewCell()}
+        cell.setUpData(data: goalData[indexPath.row])
         return cell
     }
 

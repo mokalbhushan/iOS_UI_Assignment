@@ -104,6 +104,11 @@
             <connections>
                 <outlet property="cardContentView" destination="Ent-2d-gfr" id="Lyt-XG-2SD"/>
                 <outlet property="imageView" destination="9w8-ec-gt9" id="pNp-sF-sXk"/>
+                <outlet property="progress" destination="PBD-xj-Zek" id="1Qh-wK-qFr"/>
+                <outlet property="remainingPurse" destination="ccg-i1-wbb" id="xBX-Bk-ife"/>
+                <outlet property="titleLabel" destination="Vnv-gQ-RLv" id="jiV-ga-Hhm"/>
+                <outlet property="totalPurse" destination="Nb3-m8-tzh" id="i8f-If-6eN"/>
+                <outlet property="utilisedPurseLabel" destination="ckB-gu-z6r" id="fJv-ml-aR0"/>
             </connections>
             <point key="canvasLocation" x="110.68702290076335" y="63.380281690140848"/>
         </collectionViewCell>
