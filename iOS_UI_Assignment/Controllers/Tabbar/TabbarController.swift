@@ -49,15 +49,6 @@ class TabbarController: UITabBarController {
 
 //  MARK: Created Controller for Tabbar Configuaration
 
-// MARK: Home Controller
-class HomeViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        self.navigationItem.title = "Home"
-        self.view.backgroundColor = .systemRed
-    }
-}
-
 // MARK: History Controller
 class HistoryController: UIViewController {
     override func viewDidLoad() {
