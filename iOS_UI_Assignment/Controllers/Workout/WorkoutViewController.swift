@@ -38,6 +38,12 @@ class WorkoutViewController: UIViewController {
     @IBAction func endWorkoutButtonTapped(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
+
+    @IBAction func nextButtonTapped(_ sender: Any) {
+        let vc = AchievementViewController.loadFromNib()
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
+    }
 }
 
 extension WorkoutViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {

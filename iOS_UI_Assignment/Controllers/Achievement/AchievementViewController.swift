@@ -38,7 +38,7 @@ class AchievementViewController: UIViewController {
     }
 
     @IBAction func closeButtonTapped(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        self.dismiss(animated: true)
     }
 
 }
