@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorkoutViewController" customModule="iOS_UI_Assignment" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="workOutCollectionView" destination="byW-aJ-dfs" id="yhQ-re-oAm"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -88,9 +89,6 @@
                             <state key="normal" title="Next">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </state>
-                            <connections>
-                                <action selector="endWorkoutButtonTapped:" destination="-1" eventType="touchUpInside" id="zZl-3x-0S7"/>
-                            </connections>
                         </button>
                     </subviews>
                     <constraints>
@@ -100,13 +98,30 @@
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="byW-aJ-dfs">
                     <rect key="frame" x="0.0" y="129" width="393" height="555"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ska-fF-eds">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ska-fF-eds">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9z-P3-tW6">
+                    <rect key="frame" x="30" y="179" width="333" height="26.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ajV-MP-A9J">
+                    <rect key="frame" x="166.66666666666666" y="376.66666666666669" width="60" height="60"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="CQD-h9-MET"/>
+                        <constraint firstAttribute="width" constant="60" id="XS0-vD-vZn"/>
+                    </constraints>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" image="play.fill" catalog="system"/>
+                </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uhf-k2-7FN">
                     <rect key="frame" x="20" y="684" width="353" height="80"/>
                     <subviews>
@@ -144,12 +159,11 @@
                         <constraint firstItem="BBv-dr-S2a" firstAttribute="leading" secondItem="0kc-Qe-kaa" secondAttribute="trailing" constant="15" id="jhc-5F-Sgd"/>
                     </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15/32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a9z-P3-tW6">
-                    <rect key="frame" x="30" y="179" width="333" height="26.333333333333343"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="8ii-HK-Tew">
+                    <rect key="frame" x="20" y="608.33333333333337" width="353" height="25.666666666666629"/>
+                    <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </pageControl>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -162,20 +176,26 @@
                 <constraint firstItem="byW-aJ-dfs" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="IyV-El-rUY"/>
                 <constraint firstItem="uhf-k2-7FN" firstAttribute="top" secondItem="byW-aJ-dfs" secondAttribute="bottom" id="JkZ-16-PsT"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="byW-aJ-dfs" secondAttribute="trailing" id="Mpb-DE-tWk"/>
+                <constraint firstItem="8ii-HK-Tew" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Mti-gj-i3H"/>
                 <constraint firstItem="uhf-k2-7FN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="Opw-SM-UMd"/>
                 <constraint firstItem="a9z-P3-tW6" firstAttribute="centerX" secondItem="byW-aJ-dfs" secondAttribute="centerX" id="PeL-Yw-MFH"/>
+                <constraint firstItem="ajV-MP-A9J" firstAttribute="centerX" secondItem="byW-aJ-dfs" secondAttribute="centerX" id="Vce-nN-o6Q"/>
                 <constraint firstItem="at7-mg-CCu" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="YY6-Mc-KfH"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8ii-HK-Tew" secondAttribute="trailing" constant="20" id="eU9-sd-xVo"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2Md-ld-823" secondAttribute="trailing" constant="20" id="fQP-jc-lNO"/>
+                <constraint firstItem="uhf-k2-7FN" firstAttribute="top" secondItem="8ii-HK-Tew" secondAttribute="bottom" constant="50" id="fyF-tl-bp1"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="2Md-ld-823" secondAttribute="bottom" constant="10" id="hce-kP-wNe"/>
                 <constraint firstItem="at7-mg-CCu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="l7u-XO-GHX"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="uhf-k2-7FN" secondAttribute="trailing" constant="20" id="lCp-1l-Ynr"/>
                 <constraint firstItem="2Md-ld-823" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="qki-KK-VXI"/>
+                <constraint firstItem="ajV-MP-A9J" firstAttribute="centerY" secondItem="byW-aJ-dfs" secondAttribute="centerY" id="vWu-5Z-aeM"/>
                 <constraint firstItem="byW-aJ-dfs" firstAttribute="top" secondItem="at7-mg-CCu" secondAttribute="bottom" id="xBM-Ka-tL7"/>
             </constraints>
             <point key="canvasLocation" x="136.64122137404578" y="19.718309859154932"/>
         </view>
     </objects>
     <resources>
+        <image name="play.fill" catalog="system" width="117" height="128"/>
         <image name="workoutImageIcon" width="239" height="211"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
