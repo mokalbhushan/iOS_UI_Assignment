@@ -9,9 +9,11 @@ import UIKit
 
 class TopCollectionCell: UICollectionViewCell {
 
+    @IBOutlet var contentBackgroundView: UIView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        contentBackgroundView.layer.cornerRadius = 10
     }
 
 }

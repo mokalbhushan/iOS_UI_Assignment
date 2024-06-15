@@ -9,6 +9,8 @@ import UIKit
 
 class BudgetItemCell: UITableViewCell {
 
+    @IBOutlet var cellImageView: UIImageView!
+
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -16,8 +18,7 @@ class BudgetItemCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        cellImageView.layer.cornerRadius = 10
     }
     
 }

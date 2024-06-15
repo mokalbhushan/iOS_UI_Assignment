@@ -24,7 +24,7 @@ class TabbarController: UITabBarController {
     private func setupTabbar() {
 
         tabBar.isTranslucent = false
-        tabBar.backgroundColor = .white
+        tabBar.backgroundColor = Colors.tabbarColor
 
         let homeTab = UINavigationController(rootViewController: HomeViewController())
         homeTab.tabBarItem = UITabBarItem(title: "Home", image: Images.homeIcon, selectedImage: Images.homeIcon)

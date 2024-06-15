@@ -58,7 +58,7 @@
                 </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="MIc-7B-nfs" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="2c4-tH-Amx"/>
                 <constraint firstAttribute="bottom" secondItem="MIc-7B-nfs" secondAttribute="bottom" constant="5" id="Bjy-72-bIE"/>
@@ -66,6 +66,9 @@
                 <constraint firstItem="MIc-7B-nfs" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="l8S-Qx-cEi"/>
             </constraints>
             <size key="customSize" width="191" height="93"/>
+            <connections>
+                <outlet property="contentBackgroundView" destination="MIc-7B-nfs" id="VHT-yo-oZp"/>
+            </connections>
             <point key="canvasLocation" x="246.56488549618319" y="34.859154929577464"/>
         </collectionViewCell>
     </objects>

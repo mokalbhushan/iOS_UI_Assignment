@@ -24,6 +24,8 @@
 		928DDB1C2C1D7B2D00868CE1 /* HotelsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928DDB1A2C1D7B2D00868CE1 /* HotelsViewController.xib */; };
 		928DDB222C1D966700868CE1 /* HotelViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DDB202C1D966700868CE1 /* HotelViewCell.swift */; };
 		928DDB232C1D966700868CE1 /* HotelViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 928DDB212C1D966700868CE1 /* HotelViewCell.xib */; };
+		928DDB262C1D9CD200868CE1 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DDB252C1D9CD200868CE1 /* UIColor.swift */; };
+		928DDB282C1D9D3900868CE1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 928DDB272C1D9D3900868CE1 /* Colors.swift */; };
 		92C55E322C1B3CAA003D8022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92C55E312C1B3CAA003D8022 /* AppDelegate.swift */; };
 		92C55E3B2C1B3CAC003D8022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E3A2C1B3CAC003D8022 /* Assets.xcassets */; };
 		92C55E3E2C1B3CAC003D8022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 92C55E3C2C1B3CAC003D8022 /* LaunchScreen.storyboard */; };
@@ -62,6 +64,8 @@
 		928DDB1A2C1D7B2D00868CE1 /* HotelsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelsViewController.xib; sourceTree = "<group>"; };
 		928DDB202C1D966700868CE1 /* HotelViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelViewCell.swift; sourceTree = "<group>"; };
 		928DDB212C1D966700868CE1 /* HotelViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotelViewCell.xib; sourceTree = "<group>"; };
+		928DDB252C1D9CD200868CE1 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		928DDB272C1D9D3900868CE1 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		92C55E2E2C1B3CAA003D8022 /* iOS_UI_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_UI_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		92C55E312C1B3CAA003D8022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		92C55E3A2C1B3CAC003D8022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -152,6 +156,14 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		928DDB242C1D9CB200868CE1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				928DDB252C1D9CD200868CE1 /* UIColor.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		92C55E252C1B3CAA003D8022 = {
 			isa = PBXGroup;
 			children = (
@@ -216,6 +228,7 @@
 		92C55E502C1B69DD003D8022 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				928DDB242C1D9CB200868CE1 /* Extensions */,
 				928DDB182C1D787500868CE1 /* Custom */,
 				92C55E512C1B69EB003D8022 /* Constants */,
 			);
@@ -226,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				92C55E522C1B69FC003D8022 /* Images.swift */,
+				928DDB272C1D9D3900868CE1 /* Colors.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -344,6 +358,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				92C55E472C1B3D98003D8022 /* TabbarController.swift in Sources */,
+				928DDB282C1D9D3900868CE1 /* Colors.swift in Sources */,
 				928DDAFA2C1CE60E00868CE1 /* BudgetItemCell.swift in Sources */,
 				928DDB062C1CF43D00868CE1 /* WorkoutViewController.swift in Sources */,
 				92C55E532C1B69FC003D8022 /* Images.swift in Sources */,
@@ -351,6 +366,7 @@
 				928DDB222C1D966700868CE1 /* HotelViewCell.swift in Sources */,
 				92C55E802C1CC577003D8022 /* TopCollectionCell.swift in Sources */,
 				928DDB0D2C1D673500868CE1 /* WorkoutCell.swift in Sources */,
+				928DDB262C1D9CD200868CE1 /* UIColor.swift in Sources */,
 				928DDAFD2C1CEB6700868CE1 /* UITableView.swift in Sources */,
 				92C55E842C1CD1D6003D8022 /* GoalViewCell.swift in Sources */,
 				92C55E322C1B3CAA003D8022 /* AppDelegate.swift in Sources */,
