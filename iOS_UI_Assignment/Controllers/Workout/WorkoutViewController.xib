@@ -10,8 +10,13 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WorkoutViewController" customModule="iOS_UI_Assignment" customModuleProvider="target">
             <connections>
+                <outlet property="endWorkoutButton" destination="aLd-Ed-p9K" id="vS6-JW-sdj"/>
+                <outlet property="nextButton" destination="gmi-hW-HrA" id="Nkv-jd-u7g"/>
+                <outlet property="pageControl" destination="8ii-HK-Tew" id="dY4-6B-fx8"/>
+                <outlet property="playButton" destination="ajV-MP-A9J" id="kX1-gt-Lga"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="workOutCollectionView" destination="byW-aJ-dfs" id="yhQ-re-oAm"/>
+                <outlet property="workoutConuntLabel" destination="a9z-P3-tW6" id="eP0-3g-ebf"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -100,10 +105,10 @@
                         <constraint firstAttribute="height" constant="44" id="e1b-2t-qNG"/>
                     </constraints>
                 </stackView>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="byW-aJ-dfs">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="byW-aJ-dfs">
                     <rect key="frame" x="0.0" y="129" width="393" height="555"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Ska-fF-eds">
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="Ska-fF-eds">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -164,7 +169,7 @@
                         <constraint firstItem="BBv-dr-S2a" firstAttribute="leading" secondItem="0kc-Qe-kaa" secondAttribute="trailing" constant="15" id="jhc-5F-Sgd"/>
                     </constraints>
                 </view>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="8ii-HK-Tew">
+                <pageControl opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="2" translatesAutoresizingMaskIntoConstraints="NO" id="8ii-HK-Tew">
                     <rect key="frame" x="20" y="608.33333333333337" width="353" height="25.666666666666629"/>
                     <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <color key="currentPageIndicatorTintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
